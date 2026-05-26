@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Store Sales</title>
+</head>
+
+<body>
+
+    <p id="first"></p>
+
+    <script>
+
+        // Number of items sold
+        let tshirts = 5;
+        let caps = 3;
+
+        // Prices
+        let tshirtPrice = 400;
+        let capPrice = 150;
+
+        // Calculate total earnings
+        let total = (tshirts * tshirtPrice) + (caps * capPrice);
+
+        // Display total earnings
+        document.getElementById("first").innerHTML =
+            "Total Earnings = ₹" + total;
+
+        // Change t-shirt price
+        tshirtPrice = 450;
+
+        // Recalculate total earnings
+        total = (tshirts * tshirtPrice) + (caps * capPrice);
+
+        // Print updated total
+        document.write("<br>Updated Total Earnings = ₹" + total);
+
+    </script>
+
+</body>
+</html>
