@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Profile Cleaner</title>
+</head>
+<body>
+
+    <script>
+        // User profile object
+        let userProfile = {
+            username: " CoolUser99 ",
+            bio: " I LOVE coding! JavaScript is Great!!! "
+        };
+
+        // Function to clean the profile
+        function cleanUserBio(profile) {
+
+            let cleanedUsername = profile.username.trim().toLowerCase();
+
+            let cleanedBio = profile.bio.trim().toLowerCase();
+
+            // Replace all occurrences of "javascript" with "JS"
+            cleanedBio = cleanedBio.replaceAll("javascript", "JS");
+
+            // Count characters in cleaned bio
+            let bioLength = cleanedBio.length;
+
+            // Return a new object
+            return {
+                username: cleanedUsername,
+                bio: cleanedBio,
+                bioLength: bioLength
+            };
+        }
+
+        // Get cleaned result
+        let result = cleanUserBio(userProfile);
+
+        // Display in console
+        console.log(result);
+
+    </script>
+
+</body>
+</html>

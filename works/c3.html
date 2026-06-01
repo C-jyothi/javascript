@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback Processing</title>
+</head>
+<body>
+
+    <script>
+        var feedback = "   I loved the FOOD and the service!   ";
+
+        // Remove extra spaces
+        feedback = feedback.trim();
+        document.write("After trim: " + feedback + "<br><br>");
+
+        // Convert to lowercase
+        feedback = feedback.toLowerCase();
+        document.write("Lowercase: " + feedback + "<br><br>");
+
+        // Replace "food" with "ambience"
+        feedback = feedback.replace("food", "ambience");
+        document.write("After replace: " + feedback + "<br><br>");
+
+        // Find position of "service"
+        let position = feedback.indexOf("service");
+        document.write("Position of 'service': " + position + "<br><br>");
+
+        // Convert string to array of words
+        let words = feedback.split(" ");
+        document.write("Array of words: " + words);
+
+    </script>
+
+</body>
+</html>

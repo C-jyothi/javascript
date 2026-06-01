@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Manager</title>
+</head>
+<body>
+
+    <script>
+        // First contact object
+        let contact1 = {
+            name: "John Doe",
+            phone: "9876543210",
+            email: "john@example.com",
+
+            getInfo: function() {
+                return "Name: " + this.name +
+                       ", Phone: " + this.phone +
+                       ", Email: " + this.email;
+            }
+        };
+
+        // Second contact object
+        let contact2 = {
+            name: "Jane Smith",
+            phone: "9123456780",
+            email: "jane@example.com",
+
+            getInfo: function() {
+                return "Name: " + this.name +
+                       ", Phone: " + this.phone +
+                       ", Email: " + this.email;
+            }
+        };
+
+        // Function to print contact information
+        function printContactInfo(contact) {
+            document.write(contact.getInfo() + "<br><br>");
+        }
+
+        // Call the function for both contacts
+        printContactInfo(contact1);
+        printContactInfo(contact2);
+
+    </script>
+
+</body>
+</html>
