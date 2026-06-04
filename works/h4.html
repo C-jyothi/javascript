@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Game Result Generator</h2>
+
+<script>
+
+// 1. Randomly pick a number between 1 and 50
+let mysteryLevel = Math.floor(Math.random() * 50) + 1;
+
+// 2. User score as a string
+let userScore = "45";
+
+// Convert string to number
+let score = Number(userScore);
+
+// 3. Absolute difference
+let difference = Math.abs(mysteryLevel - score);
+
+// 4. Square root of user's score
+let squareRoot = Math.sqrt(score);
+
+// 5. Value of Pi
+let piValue = Math.PI;
+
+// 6. Implicit conversion
+let result = "20" * 5;
+
+// 7. Highest and lowest values
+let highest = Math.max(10, 20, mysteryLevel);
+let lowest = Math.min(10, 20, mysteryLevel);
+
+// Display results
+console.log("Mystery Level:", mysteryLevel);
+console.log("User Score:", score);
+console.log("Absolute Difference:", difference);
+console.log("Square Root of Score:", squareRoot);
+console.log("Pi Value:", piValue);
+console.log('"20" * 5 =', result);
+console.log("Highest Value:", highest);
+console.log("Lowest Value:", lowest);
+
+</script>
+
+</body>
+</html>
